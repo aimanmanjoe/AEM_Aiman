@@ -1,0 +1,2 @@
+select p.UniqueName as PlaformName,w.*  from Platforms p join Wells w on p.Id = w.PlatformId where w.UpdatedAt in (select MAX(w.UpdatedAt) from Wells w group by platformid)
+order by p.uniquename,w.UpdatedAt DESC
