@@ -1,0 +1,6 @@
+@AEM_Aiman_HostAddress = http://localhost:5150
+
+GET {{AEM_Aiman_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
